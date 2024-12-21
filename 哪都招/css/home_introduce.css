@@ -1,0 +1,93 @@
+/* 基本样式重置 */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* 布局样式 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header nav a {
+    margin-left: 15px;
+    color: #007BFF;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.content, .team, .objectives {
+    margin-bottom: 40px;
+}
+
+.content h2, .team h2, .objectives h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.team .member {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.team .member img {
+    border-radius: 50%; /* 圆形头像 */
+    width: 100px;
+    height: 100px;
+}
+
+.team .member-info {
+    margin-left: 20px;
+}
+
+.team .member-info h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+/* 可以添加更多样式，如响应式设计、底部信息区样式等 */
