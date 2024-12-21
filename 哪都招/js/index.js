@@ -50,7 +50,4 @@ document.addEventListener('DOMContentLoaded', function() {
         // 为登录选项卡添加类名'active'，通常用于通过CSS样式来体现当前选项卡处于激活状态（比如改变颜色、样式等）
         tabLogin.classList.add('active');
     });
-    
-    
-    
 });

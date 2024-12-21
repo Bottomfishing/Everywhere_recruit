@@ -4,15 +4,17 @@ body {
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
+	background-color: #f4f4f9;
 }
 
 
 /* 页面头部和导航栏样式 */
 
 header {
-	background-color: #333;
+	background-color: #99CC99;
 	color: white;
-	padding: 10px 0;
+	padding: 20px;
+	text-align: center;
 }
 
 .navbar {
@@ -68,7 +70,7 @@ header {
 .user-info {
 	position: absolute;
 	/* 绝对定位以固定在右侧 */
-	right: 3rem;
+	right: 2.3rem;
 	/* 距离右侧边框的间距 */
 	display: flex;
 	align-items: center;
@@ -110,7 +112,7 @@ main {
 }
 
 .cta-button {
-	background-color: #007bff;
+	background-color: #99CC99;
 	color: white;
 	border: none;
 	padding: 10px 20px;
@@ -120,21 +122,123 @@ main {
 }
 
 .cta-button:hover {
-	background-color: #0056b3;
+	background-color: #99AB99;
 }
 
 
 /* 页面底部样式 */
 
-footer {
-	background-color: #333;
-	color: white;
-	text-align: center;
-	padding: 10px 0;
-}
-
 .user-icon img {
 	max-width: 50px;
 	height: auto;
 	border-radius: 50%;
+}
+
+
+/* 内部内容信息 */
+
+
+/* 滚动模块样式 */
+
+.scroll-module {
+	background-color: white;
+	padding: 20px;
+	margin: 20px auto;
+	max-width: 800px;
+	/* 限制最大宽度以适应不同屏幕尺寸 */
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-module h2 {
+	color: #FFCC99;
+	margin-top: 0;
+}
+
+.scroll-content {
+	height: 150px;
+	/* 适当增加高度以适应更多内容 */
+	overflow-y: auto;
+	border: 1px solid #ddd;
+	padding: 10px;
+	border-radius: 4px;
+	background-color: #f9f9f9;
+}
+
+
+/* 招聘内容样式 */
+
+.jobs-section,
+.vendors-section {
+	background-color: white;
+	padding: 20px;
+	margin: 20px auto;
+	max-width: 800px;
+	/* 同样限制最大宽度 */
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-list,
+.vendor-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	/* 卡片之间的间距 */
+	justify-content: space-between;
+}
+
+.job-card,
+.vendor-card {
+	background-color: #f9f9f9;
+	padding: 20px;
+	flex: 1 1 calc(33.333% - 20px);
+	/* 每个卡片占据一行中的三分之一减去间距 */
+	box-sizing: border-box;
+	border-radius: 8px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	min-width: 250px;
+	/* 确保卡片不会太小 */
+}
+
+.job-card h3,
+.vendor-card h3 {
+	color: #007bff;
+	margin-top: 0;
+}
+
+.vendor-card img {
+	max-width: 100%;
+	border-radius: 4px;
+	margin-top: 10px;
+	/* 图片与文字之间的间距 */
+}
+
+
+/* 响应式设计 */
+
+@media (max-width: 768px) {
+	.job-card,
+	.vendor-card {
+		flex: 1 1 calc(50% - 20px);
+		/* 在小屏幕上每个卡片占据一行中的一半 */
+	}
+}
+
+@media (max-width: 480px) {
+	.job-card,
+	.vendor-card {
+		flex: 1 1 100%;
+		/* 在非常小的屏幕上每个卡片占据一整行 */
+	}
+}
+
+footer {
+	background-color: #99CC90;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }
