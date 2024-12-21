@@ -2,8 +2,7 @@
 body, h1, h2, h3, p, ul, li, a {
     margin: 0;
     padding: 0;
-    list-style: none;
-    text-decoration: none;
+    line-height: 1.6;
 }
 
 /* 布局样式 */

@@ -27,6 +27,26 @@ header nav ul li a {
     text-decoration: none;
 }
 
+/* 导航栏样式 */
+nav {
+  background-color: #444;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+
 .hero {
     background: #f4f4f4;
     text-align: center;
@@ -58,11 +78,7 @@ header nav ul li a {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#contact {
-    background: #f9f9f9;
-    padding: 2rem;
-    text-align: center;
-}
+
 
 form {
     max-width: 600px;
