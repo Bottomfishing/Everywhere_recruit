@@ -14,29 +14,61 @@ header {
 
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* 初始设置为居中 */
     align-items: center;
+    position: relative; /* 为了绝对定位用户信息 */
+    padding: 10px 0;
 }
-
+.nav-links {
+    display: flex;
+    justify-content: center; /* 确保链接在容器内居中 */
+    flex: 1; /* 占据剩余空间（除了用户信息占据的空间） */
+}
 .nav-list {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+    gap: 1rem; /* 链接之间的间距 */
 }
 
 .nav-item {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 .nav-item a {
     text-decoration: none;
     color: white;
-    transition: color 0.3s ease;
+    transition: color 0.4s ease;
 }
 
 .nav-item a:hover {
     color: #ccc;
+}
+
+/* 确保用户信息部分的内容是右对齐的 */
+.user-info {
+	display: flex;
+	align-items: center; /* 垂直居中对齐 */
+}
+ 
+.user-info {
+    position: absolute; /* 绝对定位以固定在右侧 */
+    right: 3rem; /* 距离右侧边框的间距 */
+    display: flex;
+    align-items: center;
+}
+ 
+.user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.7rem; /* 头像和用户名之间的间距 */
+}
+ 
+.user-name {
+    font-size: 16px;
+    color: #FFFFFF;
 }
 
 /* 页面主体内容区域样式 */
@@ -81,14 +113,7 @@ footer {
     padding: 10px 0;
 }
 
-/* 个人图标样式 */
-.user-icon {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    border-radius: 50%;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
+
 
 .user-icon img {
     max-width: 50px;

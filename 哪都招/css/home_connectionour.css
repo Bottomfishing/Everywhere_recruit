@@ -7,10 +7,25 @@ body {
 
 /* 头部样式 */
 header {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
+    background: #333;
+    color: #fff;
+    padding:0.3rem 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
 
 /* 导航栏样式 */
