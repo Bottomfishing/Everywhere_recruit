@@ -1,65 +1,74 @@
 /* 全局样式 */
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
+
 /* 头部样式 */
+
 header {
-    background: #333;
-    color: #fff;
-    padding:0.3rem 0;
-    text-align: center;
+	background: #333;
+	color: #fff;
+	padding: 0.3rem 0;
+	text-align: center;
 }
 
 header nav ul {
-    list-style: none;
-    padding: 0;
+	list-style: none;
+	padding: 0;
 }
 
 header nav ul li {
-    display: inline;
-    margin: 0 1rem;
+	display: inline;
+	margin: 0 1rem;
 }
 
 header nav ul li a {
-    color: #fff;
-    text-decoration: none;
+	color: #fff;
+	text-decoration: none;
 }
 
+
 /* 导航栏样式 */
+
 nav {
-    background-color: #444;
-    padding: 10px;
+	background-color: #444;
+	padding: 10px;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
+
 /* 主体部分样式 */
+
 main {
-    padding: 20px;
+	padding: 20px;
 }
 
 section {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
+
 /* 页脚样式 */
+
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 10px;
 }

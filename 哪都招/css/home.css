@@ -1,122 +1,140 @@
 /* 通用样式 */
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
+
 /* 页面头部和导航栏样式 */
+
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+	background-color: #333;
+	color: white;
+	padding: 10px 0;
 }
 
 .navbar {
-    display: flex;
-    justify-content: center; /* 初始设置为居中 */
-    align-items: center;
-    position: relative; /* 为了绝对定位用户信息 */
-    padding: 10px 0;
+	display: flex;
+	justify-content: center;
+	/* 初始设置为居中 */
+	align-items: center;
+	position: relative;
+	/* 为了绝对定位用户信息 */
+	padding: 10px 0;
 }
+
 .nav-links {
-    display: flex;
-    justify-content: center; /* 确保链接在容器内居中 */
-    flex: 1; /* 占据剩余空间（除了用户信息占据的空间） */
+	display: flex;
+	justify-content: center;
+	/* 确保链接在容器内居中 */
+	flex: 1;
+	/* 占据剩余空间（除了用户信息占据的空间） */
 }
+
 .nav-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 1rem; /* 链接之间的间距 */
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	gap: 1rem;
+	/* 链接之间的间距 */
 }
 
 .nav-item {
-    margin: 0 20px;
+	margin: 0 20px;
 }
 
 .nav-item a {
-    text-decoration: none;
-    color: white;
-    transition: color 0.4s ease;
+	text-decoration: none;
+	color: white;
+	transition: color 0.4s ease;
 }
 
 .nav-item a:hover {
-    color: #ccc;
+	color: #ccc;
 }
+
 
 /* 确保用户信息部分的内容是右对齐的 */
+
 .user-info {
 	display: flex;
-	align-items: center; /* 垂直居中对齐 */
-}
- 
-.user-info {
-    position: absolute; /* 绝对定位以固定在右侧 */
-    right: 3rem; /* 距离右侧边框的间距 */
-    display: flex;
-    align-items: center;
-}
- 
-.user-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 0.7rem; /* 头像和用户名之间的间距 */
-}
- 
-.user-name {
-    font-size: 16px;
-    color: #FFFFFF;
+	align-items: center;
+	/* 垂直居中对齐 */
 }
 
+.user-info {
+	position: absolute;
+	/* 绝对定位以固定在右侧 */
+	right: 3rem;
+	/* 距离右侧边框的间距 */
+	display: flex;
+	align-items: center;
+}
+
+.user-icon {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 0.7rem;
+	/* 头像和用户名之间的间距 */
+}
+
+.user-name {
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+
 /* 页面主体内容区域样式 */
+
 main {
-    padding: 20px;
+	padding: 20px;
 }
 
 .hero-section {
-    text-align: center;
-    margin-bottom: 40px;
+	text-align: center;
+	margin-bottom: 40px;
 }
 
 .hero-section h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+	font-size: 36px;
+	margin-bottom: 20px;
 }
 
 .hero-section p {
-    font-size: 18px;
-    margin-bottom: 30px;
+	font-size: 18px;
+	margin-bottom: 30px;
 }
 
 .cta-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #0056b3;
+	background-color: #0056b3;
 }
+
 
 /* 页面底部样式 */
+
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 10px 0;
 }
 
-
-
 .user-icon img {
-    max-width: 50px;
-    height: auto;
-    border-radius: 50%;
+	max-width: 50px;
+	height: auto;
+	border-radius: 50%;
 }
