@@ -93,7 +93,82 @@ header {
 /* 页面主体内容区域样式 */
 
 main {
-	padding: 20px;
+	padding: 10px;
+}
+
+
+/*slider*/
+
+
+/*使用flex布局来水平排列图片，并设置了过渡效果。
+ * 小圆点通过position: absolute定位到底部中央，
+ * 并通过transform: translateX(-50%)来水平居中*/
+
+#slider {
+	position: relative;
+	height: 400px;
+	/* 根据需要调整高度 */
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.slider-wrapper {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+}
+
+.slider-wrapper a {
+	flex: 0 0 100%;
+}
+
+.slider-wrapper img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+/*滚动图片样式*/
+
+.styled-image {
+	/* 如果需要，还可以设置宽度和高度，但通常最好让图片保持其自然比例 */
+	/* width: 300px;
+    height: auto; */
+	/* 其他可能的样式，比如过渡效果 */
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/*当鼠标悬停在图片上时，添加一些交互效果 */
+
+.styled-image:hover {
+	/* 稍微放大图片 */
+	transform: scale(1.1);
+}
+
+.imgBtn {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.imgBtn .dot {
+	width: 10px;
+	height: 10px;
+	background-color: #bbb;
+	border-radius: 50%;
+	margin: 0 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.imgBtn .dot.active {
+	background-color: #717171;
 }
 
 .hero-section {
@@ -238,7 +313,6 @@ footer {
 	color: white;
 	text-align: center;
 	padding: 10px;
-	position: fixed;
 	bottom: 0;
 	width: 100%;
 }
