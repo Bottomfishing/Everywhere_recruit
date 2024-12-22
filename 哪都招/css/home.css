@@ -4,14 +4,14 @@ body {
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
-	background-color: #f4f4f9;
+	background-color: #F2F7FC;
 }
 
 
 /* 页面头部和导航栏样式 */
 
 header {
-	background-color: #99CC99;
+	background-color: #DDE9F7;
 	color: white;
 	padding: 20px;
 	text-align: center;
@@ -187,7 +187,7 @@ main {
 }
 
 .cta-button {
-	background-color: #99CC99;
+	background-color: #C3CAE6;
 	color: white;
 	border: none;
 	padding: 10px 20px;
@@ -197,7 +197,7 @@ main {
 }
 
 .cta-button:hover {
-	background-color: #99AB99;
+	background-color: #C3CADD;
 }
 
 
@@ -308,8 +308,30 @@ main {
 	}
 }
 
+/*打字效果*/
+.print {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: dy 3s steps(60, end) infinite;
+    animation: dy 3s steps(50, end) infinite;
+}
+
+@-webkit-keyframes dy {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes dy {
+    from {
+        width: 0;
+    }
+}
+
+
 footer {
-	background-color: #99CC90;
+	background-color: #DDE9F7;
 	color: white;
 	text-align: center;
 	padding: 10px;
