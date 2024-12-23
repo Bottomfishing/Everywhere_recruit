@@ -3,10 +3,11 @@ body {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+	background-color: #F4F4F4;
 }
 
 header {
-	background: #333;
+	background: #C3CAE6;
 	color: #fff;
 	padding: 0.3rem 0;
 	text-align: center;
@@ -31,7 +32,7 @@ header nav ul li a {
 /* 导航栏样式 */
 
 nav {
-	background-color: #444;
+	background-color: #DDE9F7;
 	padding: 10px;
 }
 
@@ -112,7 +113,7 @@ form button:hover {
 }
 
 footer {
-	background: #333;
+	background: #C3CAE6;
 	color: #fff;
 	text-align: center;
 	padding: 1rem 0;

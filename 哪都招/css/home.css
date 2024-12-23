@@ -51,7 +51,8 @@ header {
 .nav-item a {
 	text-decoration: none;
 	color: white;
-	transition: color 0.4s ease;
+	font-weight: bold;
+	transition: color 0.3s ease;
 }
 
 .nav-item a:hover {
