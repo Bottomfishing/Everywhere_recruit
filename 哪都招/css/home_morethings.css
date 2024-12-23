@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;
+    color: #333;
+}
+
+header {
+    background: #DDE9F7;
+    color: #fff;
+    padding: 1rem 0; 
+    align-items: center; /* 垂直居中 */
+    justify-content: space-between; /* 这不是必需的，但可以帮助理解Flexbox的布局方式 */
+    /* 注意：这里我们不使用justify-content: center; 因为这样会将按钮和标题都居中 */
+    /* 相反，我们将使用margin-left: auto和margin-right: auto在内部容器中居中标题 */
+    
+        /* 确保header内部元素可以浮动 */
+    overflow: hidden; /* 清除浮动 */
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    color: #35424a;
+    border-bottom: 2px solid #35424a;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background: #DDE9F7;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+/* styles.css（在现有样式的基础上添加） */
+
+#back-button {
+	float: left; /* 浮动到左边 */
+	
+    background-color: #DDE9F7; /* 与header背景色相同 */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem; /* 与h1标签保持一定距离 */
+    cursor: pointer;
+    font-size: 1rem; /* 根据需要调整字体大小 */
+    position: relative; /* 如果需要相对于header定位 */
+    top: 0.25rem; /* 微调按钮位置，使其与h1标签垂直对齐（可选） */
+   
+    margin-right: 3rem; /* 可选：在按钮和标题之间添加一些空间 */
+}
+
+#back-button:hover {
+    background-color:#C3CAE6; /* 鼠标悬停时改变背景色 */
+}
+
+.title-container {
+    /* 这是一个额外的容器，用于包裹标题，并使其能够居中 */
+    /* 由于我们使用了flex布局，并且header的justify-content不是center，我们需要一个技巧来居中标题 */
+    /* 方法是使用一个空的flex项（通过设置margin-left和margin-right为auto来实现） */
+    display: flex;
+    flex: 1; /* 使这个容器占据剩余的空间 */
+    justify-content: center; /* 在这个容器内居中标题 */
+}
+
+.title-container h1 {
+    /* 标题本身的样式，如果需要的话 */
+    margin: 0; /* 移除默认的标题外边距 */
+}
+
+/* 如果你使用图标而不是HTML实体，可以这样设置 */
+/*
+#back-button img {
+    vertical-align: middle; /* 使图标与文字垂直对齐 */
+    margin-right: 0.5rem; /* 图标与文字之间保持一定距离 */
+}
+*/

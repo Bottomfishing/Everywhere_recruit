@@ -7,7 +7,6 @@ body {
 	background-color: #F2F7FC;
 }
 
-
 /* 页面头部和导航栏样式 */
 
 header {
@@ -201,6 +200,15 @@ main {
 	background-color: #C3CADD;
 }
 
+
+.cta-button a{	text-decoration: none;
+	display: block;
+	color: #999;
+}
+
+.cta-buttona a :hover{
+	color: #fff;
+}
 
 /* 页面底部样式 */
 
