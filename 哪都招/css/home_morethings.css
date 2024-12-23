@@ -3,8 +3,8 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #F4F4F4;
-    color: #333;
+    background-image: url("../img/tulip.gif");
+    opacity: 0.95;
 }
 
 header {
