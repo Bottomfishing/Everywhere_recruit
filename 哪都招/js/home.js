@@ -44,24 +44,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //侧栏1点击展开功能
 document.getElementById('sidebar1Toggle').addEventListener('click', function() {
-    const sidebar = document.getElementById('sidebar1');
-    sidebar.classList.toggle('open');
+	const sidebar = document.getElementById('sidebar1');
+	sidebar.classList.toggle('open');
 });
 
 //侧栏1关闭功能
 document.getElementById('sidebar1').addEventListener('click', function() {
-    const sidebar = document.getElementById('sidebar1');
-    sidebar.classList.toggle('open');
-});
-
-//侧栏2点击展开功能
-document.getElementById('sidebar2Toggle').addEventListener('click', function() {
-    const sidebar = document.getElementById('sidebar2');
-    sidebar.classList.toggle('open');
-});
-
-//侧栏2关闭功能
-document.getElementById('sidebar2').addEventListener('click', function() {
-    const sidebar = document.getElementById('sidebar2');
-    sidebar.classList.toggle('open');
+	const sidebar = document.getElementById('sidebar1');
+	sidebar.classList.toggle('open');
 });

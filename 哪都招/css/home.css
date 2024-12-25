@@ -366,87 +366,54 @@ main {
 
 
 /*侧方展示栏1*/
+
 .containers {
-   display: flex;
-    flex-direction: row;
-    align-items: center; /* 垂直居中 */
-    height: 100vh;
-    position: relative; /* 为绝对定位的侧边栏提供定位上下文 */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	/* 垂直居中 */
+	height: 100vh;
+	position: relative;
+	/* 为绝对定位的侧边栏提供定位上下文 */
 }
- 
+
 .sidebar1-toggle {
-    width: 50px;
-    height: 220px; /* 小条状的高度，可以根据需要调整 */
-    background-color: #333;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    user-select: none;
+	width: 50px;
+	height: 220px;
+	/* 小条状的高度，可以根据需要调整 */
+	background-color: #333;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	user-select: none;
 }
- 
+
 .sidebar1 {
-    width: 250px;
-    height: 100vh;
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transition: transform 0.3s ease-in-out;
-    transform: translateX(-100%);
-    overflow-y: auto;
+	width: 250px;
+	height: 100vh;
+	background-color: #333;
+	color: white;
+	padding: 20px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: transform 0.3s ease-in-out;
+	transform: translateX(-100%);
+	overflow-y: auto;
 }
- 
+
 .sidebar1.open {
-    transform: translateX(0);
+	transform: translateX(0);
 }
- 
+
 .main-contents {
-    flex-grow: 1;
-    padding: 20px;
-    background-color#F2F7FC;
-    overflow-y: auto;
+	flex-grow: 1;
+	padding: 20px;
+	background-color#F2F7FC;
+	overflow-y: auto;
 }
-
-/*侧方展示栏2*/
-
- 
-.sidebar2-toggle {
-    width: 50px;
-    height: 220px; /* 小条状的高度，可以根据需要调整 */
-    background-color: #333;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    user-select: none;
-       
-    right: 0; /* 将触发按钮放在右侧 */
-}
- 
-.sidebar2 {
-    width: 250px;
-    height: 100vh;
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    position: absolute;
-    top: 0;
-    right: 0px; /* 初始状态，将侧边栏移出屏幕右侧 */
-    transition: transform 0.3s ease-in-out;
-    transform: translateX(100%);
-    overflow-y: auto;
-}
- 
-.sidebar2.open {
-    transform: translateX(0);
-}
- 
-
 
 footer {
 	background-color: #DDE9F7;
