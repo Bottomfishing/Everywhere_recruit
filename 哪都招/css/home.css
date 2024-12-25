@@ -7,6 +7,7 @@ body {
 	background-color: #F2F7FC;
 }
 
+
 /* 页面头部和导航栏样式 */
 
 header {
@@ -16,14 +17,33 @@ header {
 	text-align: center;
 }
 
+
+/* 确保导航栏固定在顶部 */
+
 .navbar {
 	display: flex;
-	justify-content: center;
-	/* 初始设置为居中 */
+	justify-content: space-between;
+	/* 在主轴上分配空间 */
+	padding: 10px;
+	/* 内边距 */
+	top: 0;
+	left: 0;
 	align-items: center;
-	position: relative;
-	/* 为了绝对定位用户信息 */
-	padding: 10px 0;
+	/* 在交叉轴上居中对齐 */
+	background-color: rgba(0, 0, 0, 0.5);
+	/* 使用rgba设置半透明背景 */
+	z-index: 1000;
+	/* 确保它悬浮在其他内容之上 */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	/* 可选：添加阴影以增强悬浮效果 */
+	position: fixed;
+	/* 固定定位 */
+	top: 0;
+	/* 顶部对齐 */
+	width: 100%;
+	/* 全宽 */
+	z-index: 1000;
+	/* 确保悬浮在其他内容之上 */
 }
 
 .nav-links {
@@ -47,11 +67,18 @@ header {
 	margin: 0 20px;
 }
 
-.nav-item a {
+
+/* 调整导航链接的样式以适应半透明背景 */
+
+.navbar .nav-item a {
+	color: #fff;
+	/* 白色文字以适应深色背景 */
 	text-decoration: none;
-	color: white;
-	font-weight: bold;
-	transition: color 0.3s ease;
+	/* 去除下划线 */
+	padding: 10px 15px;
+	/* 根据需要调整内边距 */
+	display: inline-block;
+	/* 确保内边距和背景色应用于整个链接区域 */
 }
 
 .nav-item a:hover {
@@ -93,7 +120,8 @@ header {
 /* 页面主体内容区域样式 */
 
 main {
-	padding: 10px;
+	margin-top: 60px;
+	/* 根据导航栏的高度调整 */
 }
 
 
@@ -200,15 +228,16 @@ main {
 	background-color: #C3CADD;
 }
 
-
-.cta-button a{	text-decoration: none;
+.cta-button a {
+	text-decoration: none;
 	display: block;
 	color: #FFFFFF;
 }
 
-.cta-buttona a :hover{
+.cta-buttona a :hover {
 	color: #fff;
 }
+
 
 /* 页面底部样式 */
 
@@ -317,27 +346,28 @@ main {
 	}
 }
 
+
 /*打字效果*/
+
 .print {
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    -webkit-animation: dy 3s steps(60, end) infinite;
-    animation: dy 3s steps(50, end) infinite;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation: dy 3s steps(60, end) infinite;
+	animation: dy 3s steps(50, end) infinite;
 }
 
 @-webkit-keyframes dy {
-    from {
-        width: 0;
-    }
+	from {
+		width: 0;
+	}
 }
 
 @keyframes dy {
-    from {
-        width: 0;
-    }
+	from {
+		width: 0;
+	}
 }
-
 
 footer {
 	background-color: #DDE9F7;
