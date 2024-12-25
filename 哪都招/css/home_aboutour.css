@@ -5,6 +5,8 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #F4F4F4;
+	overflow-x: hidden; /* 防止水平滚动条 */
+
 }
 
 
@@ -13,7 +15,7 @@ body {
 header {
 	background: #C3CAE6;
 	color: #fff;
-	padding: 0.3rem 0;
+	padding: 0.1rem 0;
 	text-align: center;
 }
 
@@ -76,12 +78,6 @@ footer {
 
 
 /*下方提交框*/
-
-* {
-	font-family: Arial, Verdana, sans-serif;
-	color: #665544;
-}
-
 input {
 	border-bottom: 1px dotted #dcdcdc;
 	border-top: none;

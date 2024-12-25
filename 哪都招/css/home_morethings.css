@@ -4,7 +4,9 @@ body {
     margin: 0;
     padding: 0;
     background-image: url("../img/tulip.gif");
-    opacity: 0.95;
+    opacity: 0.85;
+    overflow-x: hidden; /* 防止水平滚动条 */
+
 }
 
 header {
@@ -12,16 +14,14 @@ header {
     color: #fff;
     padding: 1rem 0; 
     align-items: center; /* 垂直居中 */
-    justify-content: space-between; /* 这不是必需的，但可以帮助理解Flexbox的布局方式 */
     /* 注意：这里我们不使用justify-content: center; 因为这样会将按钮和标题都居中 */
-    /* 相反，我们将使用margin-left: auto和margin-right: auto在内部容器中居中标题 */
-    
-        /* 确保header内部元素可以浮动 */
-    overflow: hidden; /* 清除浮动 */
 }
 
 header h1 {
     margin: 0;
+}
+.hero h1 {
+    text-align: center;
 }
 
 main {

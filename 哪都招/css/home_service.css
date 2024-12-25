@@ -3,12 +3,14 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #F4F4F4;
+    overflow-x: hidden; /* 防止水平滚动条 */
+
 }
 
 header {
 	background: #C3CAE6;
 	color: #fff;
-	padding: 0.3rem 0;
+	padding: 0.1rem 0;
 	text-align: center;
 }
 
@@ -112,8 +114,10 @@ form button:hover {
 }
 
 footer {
-	background: #C3CAE6;
-	color: #fff;
+	background-color: #DDE9F7;
+	color: white;
 	text-align: center;
-	padding: 1rem 0;
+	padding: 7px;
+	bottom: 0;
+	width: 100%;
 }

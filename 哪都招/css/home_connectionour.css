@@ -4,7 +4,8 @@ body {
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
-	
+    overflow-x: hidden; /* 防止水平滚动条 */
+
 }
 
 
@@ -13,7 +14,7 @@ body {
 header {
 	background: #C3CAE6;
 	color: #FFFFFF;
-	padding: 0.3rem 0;
+	padding: 0.1rem 0;
 	text-align: center;
 }
 

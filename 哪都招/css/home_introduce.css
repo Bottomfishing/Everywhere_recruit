@@ -13,6 +13,8 @@ a {
 	margin: 0;
 	padding: 0;
 	color: #333;
+    overflow-x: hidden; /* 防止水平滚动条 */
+
 }
 
 
@@ -177,8 +179,15 @@ p {
 }
 
 footer {
-	background: #333;
-	color: #fff;
+	background-color: #DDE9F7;
+	color: white;
 	text-align: center;
-	padding: 1rem 0;
+	padding: 10px;
+	bottom: 0;
+	width: 100%;
+}
+
+footer p{
+	color: white;
+    text-align: center; /* 同时水平居中 */
 }
