@@ -51,3 +51,15 @@ document.addEventListener('DOMContentLoaded', function() {
         tabLogin.classList.add('active');
     });
 });
+
+// 获取注册表单元素
+const signupForm = document.getElementById('signupForm');
+
+// 为表单的提交事件添加监听器
+signupForm.addEventListener('submit', function(event) {
+    const termsCheckbox = document.getElementById('termsCheckbox');
+    if (!termsCheckbox.checked) {
+        alert('请勾选同意格式条款');
+        event.preventDefault(); // 阻止表单提交
+    }
+});
