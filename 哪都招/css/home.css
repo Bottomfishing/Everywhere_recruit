@@ -1,12 +1,16 @@
 /* 通用样式 */
 
 body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-	background-color: #F2F7FC;
-	overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F2F7FC;
+    overflow-x: hidden;
 	/* 防止水平滚动条 */
+
 }
 
 
@@ -115,8 +119,8 @@ body {
 /* 页面主体内容区域样式 */
 
 main {
-	margin-top: 60px;
-	/* 根据导航栏的高度调整 */
+    flex-grow: 1;
+    padding-right: 40px;
 }
 
 
@@ -323,25 +327,6 @@ main {
 }
 
 
-/* 响应式设计 */
-
-@media (max-width: 768px) {
-	.job-card,
-	.vendor-card {
-		flex: 1 1 calc(50% - 20px);
-		/* 在小屏幕上每个卡片占据一行中的一半 */
-	}
-}
-
-@media (max-width: 480px) {
-	.job-card,
-	.vendor-card {
-		flex: 1 1 100%;
-		/* 在非常小的屏幕上每个卡片占据一整行 */
-	}
-}
-
-
 /*打字效果*/
 
 .print {
@@ -370,39 +355,80 @@ main {
 .containers {
 	display: flex;
 	flex-direction: row;
-	align-items: center;
-	/* 垂直居中 */
 	height: 100vh;
 	position: relative;
 	/* 为绝对定位的侧边栏提供定位上下文 */
 }
 
 .sidebar1-toggle {
-	width: 50px;
-	height: 220px;
-	/* 小条状的高度，可以根据需要调整 */
-	background-color: #333;
-	color: white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	cursor: pointer;
-	user-select: none;
+    width: 40px;
+    height: 220px; /* 小条状的高度，可以根据需要调整 */
+    background-color: #F5F7FF; 
+    color: #333; /* 深灰色字体，与背景形成对比 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* 设置flex容器的主轴方向为垂直，但这不是使文字竖排的关键 */
+    writing-mode: vertical-rl; /* 设置文字书写方向为垂直从右到左 */
+    text-orientation: upright; /* 设置文字方向为直立（有些情况下可能需要） */
+    letter-spacing: 0.3em; /* 设置文字之间的间距为0.1em */
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid #ccc; /* 浅灰色边框 */
+    /* 只设置右上角和右下角的圆角 */
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
+}
+ 
+/* 如果需要鼠标悬停效果，可以添加以下样式 */
+.sidebar1-toggle:hover {
+    background-color: #DDE9F7; /* 鼠标悬停时背景颜色变深一点，仍然是浅蓝色系 */
 }
 
 .sidebar1 {
-	width: 250px;
-	height: 100vh;
-	background-color: #333;
-	color: white;
-	padding: 20px;
-	position: absolute;
-	left: 0;
-	top: 0;
-	transition: transform 0.3s ease-in-out;
-	transform: translateX(-100%);
-	overflow-y: auto;
+    width: 250px;
+    height: 100vh;
+    background-color: #f5f5f5; /* 浅灰色背景 */
+    color: #333; /* 深灰色字体，与浅色背景形成对比 */
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* 添加盒子阴影以增加深度感 */
+    font-size: 16px; /* 设置字体大小 */
+    line-height: 1.5; /* 设置行高，增加可读性 */
+    letter-spacing: 0.05em; /* 轻微增加文字间距 */
 }
+ 
+/* 为 .sidebar1 内的段落或文字块增加底部间距 */
+.sidebar1 p,
+.sidebar1 .text-block {
+    margin-bottom: 15px; /* 根据需要调整间距 */
+}
+ 
+/* 可选：为最后一个段落或文字块移除底部间距 */
+.sidebar1 p:last-child,
+.sidebar1 .text-block:last-child {
+    margin-bottom: 0;
+}
+ 
+/* 可选：使用伪元素为文字块之间添加分隔线 */
+.sidebar1 .text-block + .text-block::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd; /* 分隔线颜色，比背景色稍深 */
+    margin-top: 15px; /* 分隔线上方的间距 */
+    margin-bottom: 15px; /* 分隔线下方的间距 */
+}
+ 
+/* 注意：.text-block 是一个假设的类名，用于标识需要分隔的文字块。
+   您需要根据实际的 HTML 结构来替换或添加相应的选择器。 */
 
 .sidebar1.open {
 	transform: translateX(0);
@@ -415,11 +441,107 @@ main {
 	overflow-y: auto;
 }
 
+
+/*页面主要内容*/
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 两列布局 */
+    gap: 0;
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 800px; /* 假设图片最大宽度总和为800px，这里根据实际情况调整 */
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+.image-item:nth-child(1) img {
+    border-top-left-radius: 10px;
+
+}
+.image-item:nth-child(2) img {
+    border-top-right-radius: 10px;
+
+}
+.image-item:nth-child(3) img {
+    border-bottom-left-radius: 10px;
+
+}
+.image-item:nth-child(4) img {
+    border-bottom-right-radius: 10px;
+
+}
+ 
+.image-item img {
+    width: 100%;
+   height: 100%;
+    object-fit: cover;
+    max-width: 400px;
+    max-height: 300px;
+}
+ 
+.job-listings, .popular-companies {
+    padding: 20px;
+}
+ 
+.job-grid, .company-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 三列布局 */
+    gap: 10px;
+}
+ 
+.job-item, .company-item {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+ 
+.view-more {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ 
+.view-more:hover {
+    background-color: #0056b3;
+}
+ 
+ /*响应设置*/
+@media (max-width: 768px) {
+    main {
+        padding-right: 20px;
+    }
+  .image-grid {
+        margin-bottom: 120px;
+    }
+  .job-listings {
+        clear: both;
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+  .image-grid {
+        margin-bottom: 40px;
+    }
+  .job-listings {
+        padding-top: 30px;
+    }
+}
+
 footer {
 	background-color: #DDE9F7;
 	color: white;
-	text-align: center;
-	padding: 7px;
-	bottom: 0;
-	width: 100%;
+	padding: 20px;
+    text-align: center;
+	margin-top: auto; /* 这会将footer推到main内容下方的任何剩余空间 */
 }
+

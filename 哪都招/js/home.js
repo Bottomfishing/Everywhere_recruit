@@ -53,3 +53,4 @@ document.getElementById('sidebar1').addEventListener('click', function() {
 	const sidebar = document.getElementById('sidebar1');
 	sidebar.classList.toggle('open');
 });
+
