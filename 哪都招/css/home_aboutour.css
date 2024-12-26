@@ -1,17 +1,15 @@
 /* 全局样式 */
-
 body {
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
 	background-color: #F4F4F4;
-	overflow-x: hidden; /* 防止水平滚动条 */
-
+	overflow-x: hidden;
+	/* 防止水平滚动条 */
 }
 
 
 /* 头部样式 */
-
 header {
 	background: #C3CAE6;
 	color: #fff;
@@ -34,9 +32,7 @@ header nav ul li a {
 	text-decoration: none;
 }
 
-
 /* 导航栏样式 */
-
 nav {
 	background-color: #DDE9F7;
 	padding: 10px;
@@ -55,9 +51,7 @@ nav ul li a {
 	text-decoration: none;
 }
 
-
 /* 主体部分样式 */
-
 main {
 	padding: 20px;
 }
@@ -65,17 +59,6 @@ main {
 section {
 	margin-bottom: 20px;
 }
-
-
-/* 页脚样式 */
-
-footer {
-	background-color: #C3CAE6;
-	color: white;
-	text-align: center;
-	padding: 10px;
-}
-
 
 /*下方提交框*/
 input {
@@ -121,4 +104,12 @@ legend {
 	padding: 10px 20px;
 	text-align: left;
 	text-transform: uppercase;
+}
+
+/* 页脚样式 */
+footer {
+	background-color: #C3CAE6;
+	color: white;
+	text-align: center;
+	padding: 10px;
 }

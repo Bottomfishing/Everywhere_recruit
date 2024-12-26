@@ -1,3 +1,3 @@
-        document.getElementById('backButton').addEventListener('click', function () {
-            window.history.back();
+        document.getElementById('backButton').addEventListener('click', function() {
+        	window.history.back();
         });

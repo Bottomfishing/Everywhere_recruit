@@ -54,9 +54,7 @@ footer {
     bottom: 0;
 }
 
-
 /* styles.css（在现有样式的基础上添加） */
-
 #back-button {
 	float: left; /* 浮动到左边 */
 	
@@ -90,11 +88,3 @@ footer {
     /* 标题本身的样式，如果需要的话 */
     margin: 0; /* 移除默认的标题外边距 */
 }
-
-/* 如果你使用图标而不是HTML实体，可以这样设置 */
-/*
-#back-button img {
-    vertical-align: middle; /* 使图标与文字垂直对齐 */
-    margin-right: 0.5rem; /* 图标与文字之间保持一定距离 */
-}
-*/

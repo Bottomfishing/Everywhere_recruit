@@ -10,7 +10,6 @@ body {
 	overflow-x: hidden;
 }
 
-
 /* 页面头部和导航栏样式 */
 .navbar {
 	display: flex;
@@ -56,7 +55,6 @@ body {
 	margin: 0 20px;
 }
 
-
 /* 调整导航链接的样式以适应半透明背景 */
 .navbar .nav-item a {
 	color: #fff;
@@ -81,7 +79,6 @@ body {
 	display: block;
 	opacity: 0;
 }
-
 
 /* 确保用户信息部分的内容是右对齐的 */
 .user-info {
@@ -110,13 +107,11 @@ body {
 	color: #FFFFFF;
 }
 
-
 /* 页面主体内容区域样式 */
 main {
 	flex-grow: 1;
 	padding-right: 40px;
 }
-
 
 /*slider样式*/
 #slider {
@@ -142,16 +137,10 @@ main {
 	object-fit: cover;
 }
 
-
 /*滚动图片样式*/
 .styled-image {
-	/* 如果需要，还可以设置宽度和高度，但通常最好让图片保持其自然比例 */
-	/* width: 300px;
-    height: auto; */
-	/* 其他可能的样式，比如过渡效果 */
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 /*当鼠标悬停在图片上时，添加一些交互效果 */
 .styled-image:hover {
@@ -232,7 +221,6 @@ main {
 	border-radius: 50%;
 }
 
-
 /* 内部内容信息 */
 /* 滚动模块样式 */
 .scroll-module {
@@ -294,38 +282,11 @@ main {
 	/* 确保卡片不会太小 */
 }
 
-.job-card h3,
-.vendor-card h3 {
-	color: #007bff;
-	margin-top: 0;
-}
-
 .vendor-card img {
 	max-width: 100%;
 	border-radius: 4px;
 	margin-top: 10px;
 	/* 图片与文字之间的间距 */
-}
-
-
-/*打字效果*/
-.print {
-	width: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	-webkit-animation: dy 3s steps(60, end) infinite;
-	animation: dy 3s steps(50, end) infinite;
-}
-
-@-webkit-keyframes dy {
-	from {
-		width: 0;
-	}
-}
-@keyframes dy {
-	from {
-		width: 0;
-	}
 }
 
 /*侧方展示栏1*/
@@ -365,7 +326,6 @@ main {
 	/* 添加过渡效果 */
 }
 
-
 /* 如果需要鼠标悬停效果，可以添加以下样式 */
 .sidebar1-toggle:hover {
 	background-color: #DDE9F7;
@@ -392,7 +352,6 @@ main {
 	/* 确保侧边栏不会覆盖footer */
 }
 
-
 /* 为 .sidebar1 内的段落或文字块增加底部间距 */
 .sidebar1 p,
 .sidebar1 .text-block {
@@ -404,7 +363,6 @@ main {
 .sidebar1 .text-block:last-child {
 	margin-bottom: 0;
 }
-
 
 /* 可选：使用伪元素为文字块之间添加分隔线 */
 .sidebar1 .text-block+.text-block::before {
@@ -419,7 +377,6 @@ main {
 	margin-bottom: 15px;
 	/* 分隔线下方的间距 */
 }
-
 
 /* 注意：.text-block 是一个假设的类名，用于标识需要分隔的文字块。
    您需要根据实际的 HTML 结构来替换或添加相应的选择器。 */
@@ -510,9 +467,7 @@ main {
 	background-color: #0056b3;
 }
 
-
 /*响应设置*/
-
 @media (max-width: 768px) {
 	main {
 		padding-right: 20px;
