@@ -1,6 +1,4 @@
 /* index.css */
-
-
 /* 通用样式，影响整个页面的基础布局与外观 */
 
 body,
@@ -16,10 +14,11 @@ html {
 	justify-content: center;
 	align-items: center;
 	background-image: url('../img/哪都招注册背景.jpg');
-	background - size: 100% auto;
-	background - position: center center;
-	background - blend - mode: multiply;
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: multiply;
 	opacity: 0.9;
+	overflow: hidden;
 }
 
 
@@ -28,7 +27,7 @@ html {
 .logo-container {
 	text-align: center;
 	/* 使内部元素水平居中，用于logo居中显示 */
-	padding: 20px 0;
+	padding: 30px 0;
 	/* 添加上下内边距，增加视觉舒适度 */
 }
 
@@ -37,24 +36,22 @@ html {
 	/* 图片宽度自适应容器，避免小屏幕溢出 */
 	height: auto;
 	/* 保持图片宽高比，防止变形 */
+	animation: logoFadeIn 1s ease-in-out;
 }
 
 
+@keyframes logoFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 /* 表单容器样式，把控表单整体在页面中的呈现 */
-
-.form-container {
-	max-width: 600px;
-	/* 限制最大宽度，适配不同屏幕 */
-	margin: 0 auto;
-	/* 水平居中对齐表单容器 */
-	padding: 20px;
-	/* 增加内边距，使表单内容布局更舒适 */
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	/* 添加阴影，增强立体感 */
-	background-color: #fff;
-	/* 设置白色背景，便于内容显示 */
-}
-
 .form {
 	background: white;
 	padding: 20px;
@@ -87,10 +84,11 @@ html {
 	text-decoration: none;
 	padding: 15px;
 	display: block;
-	color: #999;
-	background: #eee;
+	color: #666;
+	background: #f0f0f0;
 	text-align: center;
-	border-bottom: 2px solid transparent;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
 }
 
 .tab-group li a:hover {
@@ -102,7 +100,7 @@ html {
 .tab-group.active a {
 	color: #fff;
 	background: #007bff;
-	border-bottom: 2px solid #0056b3;
+	border-bottom: 3px solid #0056b3;
 	/* 激活标签页显示特定样式，突出选中状态 */
 }
 
@@ -111,14 +109,15 @@ html {
 
 .field-wrap {
 	position: relative;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 	/* 各字段间添加间隔 */
 }
 
 .field-wrap label {
 	display: block;
-	margin-bottom: 5px;
+	margin-bottom: 8px;
 	color: #333;
+	font-weight: 500;
 }
 
 .field-wrap label span.req {
@@ -129,12 +128,13 @@ html {
 .field-wrap input[type="text"],
 .field-wrap input[type="email"],
 .field-wrap input[type="password"] {
-	width: calc(100% - 22px);
-	padding: 10px 11px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-	font-size: 14px;
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: all 0.3s ease;
 }
 
 .field-wrap input[type="text"]:focus,
@@ -152,15 +152,15 @@ html {
 .button {
 	background-color: #007bff;
 	border: none;
-	padding: 10px 15px;
+	padding: 12px 15px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 14px;
-	margin-top: 10px;
+	margin-top: 15px;
 	cursor: pointer;
 	color: white;
-	border-radius: 4px;
+	border-radius: 6px;
 	transition: background-color 0.3s ease;
 	/* 背景色过渡动画效果 */
 }
@@ -190,6 +190,7 @@ html {
 .forgot a {
 	color: #007bff;
 	text-decoration: none;
+	transition: all 0.3s ease;
 }
 
 .forgot a:hover {
