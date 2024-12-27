@@ -32,6 +32,8 @@ body {
 	width: 100%;
 	z-index: 1000;
 	/* 确保悬浮在其他内容之上 */
+    height: auto; /* 确保有足够高度 */
+    overflow: visible; /* 确保内容不会被裁剪 */
 }
 
 .nav-links {
@@ -81,31 +83,8 @@ body {
 }
 
 /* 确保用户信息部分的内容是右对齐的 */
-.user-info {
-	display: flex;
-	align-items: center;
-}
 
-.user-info {
-	position: absolute;
-	/* 绝对定位以固定在右侧 */
-	right: 2.3rem;
-	display: flex;
-	align-items: center;
-}
 
-.user-icon {
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	margin-right: 0.7rem;
-	/* 头像和用户名之间的间距 */
-}
-
-.user-name {
-	font-size: 16px;
-	color: #FFFFFF;
-}
 
 /* 页面主体内容区域样式 */
 main {
@@ -220,6 +199,56 @@ main {
 	height: auto;
 	border-radius: 50%;
 }
+
+.user-info {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 2.3rem;
+    display: inline-block;
+    z-index: 1001;
+}
+
+.user-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.user-details {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-width: 150px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.user-info:hover.user-details {
+    display: block;
+}
+
+.user-details p {
+    margin: 5px 0;
+}
+
+.user-details a {
+    display: block;
+    margin-top: 5px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.user - details a:hover {
+    text - decoration: underline;
+}
+
 
 /* 内部内容信息 */
 /* 滚动模块样式 */
@@ -387,7 +416,7 @@ main {
 .main-contents {
 	flex-grow: 1;
 	padding: 20px;
-	background-color#F2F7FC;
+	background-color: #F2F7FC;
 }
 
 /*页面主要内容*/
