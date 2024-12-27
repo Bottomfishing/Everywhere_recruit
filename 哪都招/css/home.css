@@ -1,4 +1,5 @@
 /* 通用样式 */
+
 body {
 	display: flex;
 	flex-direction: column;
@@ -10,7 +11,9 @@ body {
 	overflow-x: hidden;
 }
 
+
 /* 页面头部和导航栏样式 */
+
 .navbar {
 	display: flex;
 	justify-content: space-between;
@@ -32,8 +35,9 @@ body {
 	width: 100%;
 	z-index: 1000;
 	/* 确保悬浮在其他内容之上 */
-    height: auto; /* 确保有足够高度 */
-    overflow: visible; /* 确保内容不会被裁剪 */
+	/* 确保有足够高度 */
+	overflow: visible;
+	/* 确保内容不会被裁剪 */
 }
 
 .nav-links {
@@ -57,7 +61,9 @@ body {
 	margin: 0 20px;
 }
 
+
 /* 调整导航链接的样式以适应半透明背景 */
+
 .navbar .nav-item a {
 	color: #fff;
 	/* 白色文字以适应深色背景 */
@@ -82,17 +88,20 @@ body {
 	opacity: 0;
 }
 
+
 /* 确保用户信息部分的内容是右对齐的 */
 
 
-
 /* 页面主体内容区域样式 */
+
 main {
 	flex-grow: 1;
 	padding-right: 40px;
 }
 
+
 /*slider样式*/
+
 #slider {
 	position: relative;
 	height: 400px;
@@ -116,12 +125,16 @@ main {
 	object-fit: cover;
 }
 
+
 /*滚动图片样式*/
+
 .styled-image {
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
 /*当鼠标悬停在图片上时，添加一些交互效果 */
+
 .styled-image:hover {
 	/* 稍微放大图片 */
 	transform: scale(1.1);
@@ -191,9 +204,7 @@ main {
 	color: #fff;
 }
 
-
 /* 页面底部样式 */
-
 .user-icon img {
 	max-width: 50px;
 	height: auto;
@@ -201,54 +212,53 @@ main {
 }
 
 .user-info {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    right: 2.3rem;
-    display: inline-block;
-    z-index: 1001;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	right: 2.3rem;
+	display: inline-block;
+	z-index: 1001;
 }
 
 .user-icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-    cursor: pointer;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	object-fit: cover;
+	cursor: pointer;
 }
 
 .user-details {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 10px;
-    min-width: 150px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 100;
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	padding: 10px;
+	min-width: 150px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	z-index: 100;
 }
 
 .user-info:hover.user-details {
-    display: block;
+	display: block;
 }
 
 .user-details p {
-    margin: 5px 0;
+	margin: 5px 0;
 }
 
 .user-details a {
-    display: block;
-    margin-top: 5px;
-    text-decoration: none;
-    color: #007BFF;
+	display: block;
+	margin-top: 5px;
+	text-decoration: none;
+	color: #007BFF;
 }
 
 .user-details a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
-
 
 /* 内部内容信息 */
 /* 滚动模块样式 */
@@ -257,7 +267,6 @@ main {
 	padding: 20px;
 	margin: 20px auto;
 	max-width: 800px;
-	/* 限制最大宽度以适应不同屏幕尺寸 */
 	border-radius: 8px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -269,7 +278,6 @@ main {
 
 .scroll-content {
 	height: 150px;
-	/* 适当增加高度以适应更多内容 */
 	overflow-y: auto;
 	border: 1px solid #ddd;
 	padding: 10px;
@@ -284,7 +292,6 @@ main {
 	padding: 20px;
 	margin: 20px auto;
 	max-width: 800px;
-	/* 同样限制最大宽度 */
 	border-radius: 8px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -294,7 +301,6 @@ main {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 20px;
-	/* 卡片之间的间距 */
 	justify-content: space-between;
 }
 
@@ -303,20 +309,18 @@ main {
 	background-color: #f9f9f9;
 	padding: 20px;
 	flex: 1 1 calc(33.333% - 20px);
-	/* 每个卡片占据一行中的三分之一减去间距 */
 	box-sizing: border-box;
 	border-radius: 8px;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 	min-width: 250px;
-	/* 确保卡片不会太小 */
 }
 
 .vendor-card img {
 	max-width: 100%;
 	border-radius: 4px;
 	margin-top: 10px;
-	/* 图片与文字之间的间距 */
 }
+
 
 /*侧方展示栏1*/
 .containers {
@@ -330,29 +334,21 @@ main {
 .sidebar1-toggle {
 	width: 40px;
 	height: 220px;
-	/* 小条状的高度，可以根据需要调整 */
 	background-color: #F5F7FF;
 	color: #333;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	/* 设置flex容器的主轴方向为垂直，但这不是使文字竖排的关键 */
 	writing-mode: vertical-rl;
-	/* 设置文字书写方向为垂直从右到左 */
 	text-orientation: upright;
-	/* 设置文字方向为直立（有些情况下可能需要） */
 	letter-spacing: 0.3em;
-	/* 设置文字之间的间距为0.3em */
 	cursor: pointer;
 	user-select: none;
 	border: 1px solid #ccc;
-	/* 浅灰色边框 */
-	/* 只设置右上角和右下角的圆角 */
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 	transition: background-color 0.3s ease;
-	/* 添加过渡效果 */
 }
 
 /* 如果需要鼠标悬停效果，可以添加以下样式 */
@@ -381,6 +377,7 @@ main {
 	/* 确保侧边栏不会覆盖footer */
 }
 
+
 /* 为 .sidebar1 内的段落或文字块增加底部间距 */
 .sidebar1 p,
 .sidebar1 .text-block {
@@ -394,17 +391,15 @@ main {
 }
 
 /* 可选：使用伪元素为文字块之间添加分隔线 */
+
 .sidebar1 .text-block+.text-block::before {
 	content: "";
 	display: block;
 	width: 100%;
 	height: 1px;
 	background-color: #ddd;
-	/* 分隔线颜色，比背景色稍深 */
 	margin-top: 15px;
-	/* 分隔线上方的间距 */
 	margin-bottom: 15px;
-	/* 分隔线下方的间距 */
 }
 
 /* 注意：.text-block 是一个假设的类名，用于标识需要分隔的文字块。
@@ -460,6 +455,14 @@ main {
 .job-listings,
 .popular-companies {
 	padding: 20px;
+	font-family: Arial, sans-serif;
+}
+
+
+/* 标题样式 */
+
+.job-listings h2 {
+	text-align: center;
 }
 
 .job-grid,
@@ -475,20 +478,67 @@ main {
 	background-color: #ffffff;
 	border: 1px solid #dee2e6;
 	border-radius: 5px;
-	padding: 10px;
-	text-align: center;
+	padding: 12px;
+	position: relative;
 }
+
+
+/* 招聘要求样式 */
+
+.requirements {
+	margin-top: 10px;
+}
+
+
+/* 企业分类样式 */
+
+.category {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+
+/* 企业logo样式 */
+
+.logo {
+	width: 50px;
+	height: 50px;
+	background-color: #eee;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+
+
+/* 薪资样式 */
+
+.salary {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: red;
+}
+
+
+/* 招聘要求样式 */
+
+.requirements {
+	margin-top: 10px;
+}
+
+
+/* 查看更多按钮样式 */
 
 .view-more {
 	display: block;
-	width: 100%;
-	max-width: 200px;
-	margin: 20px auto;
-	padding: 10px;
-	background-color: #007bff;
-	color: #ffffff;
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #007BFF;
+	color: white;
 	border: none;
 	border-radius: 5px;
+	margin: 20px auto;
 	cursor: pointer;
 }
 
@@ -496,7 +546,9 @@ main {
 	background-color: #0056b3;
 }
 
+
 /*响应设置*/
+
 @media (max-width: 768px) {
 	main {
 		padding-right: 20px;
@@ -510,13 +562,7 @@ main {
 	.company-item p:last-child {
 		display: none;
 	}
-}
-
-footer {
-	background-color: #DDE9F7;
-	color: white;
-	padding: 20px;
-	text-align: center;
-	margin-top: auto;
-	/* 这会将footer推到main内容下方的任何剩余空间 */
+	.popular - companies.company - item p:last - child {
+		display: none;
+	}
 }
