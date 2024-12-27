@@ -562,7 +562,13 @@ main {
 	.company-item p:last-child {
 		display: none;
 	}
-	.popular - companies.company - item p:last - child {
-		display: none;
-	}
+	    /* 修改薪资样式 */
+  .salary {
+        position: relative;
+        top: 0;
+        right: 0;
+        display: block;
+        margin-top: 5px;
+    }
+
 }
