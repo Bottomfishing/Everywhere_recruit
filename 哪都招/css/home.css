@@ -100,6 +100,18 @@ main {
 }
 
 
+/* 搜索框样式 */
+/* 搜索框外层容器样式 */
+.search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    background-color: #f0f9e8; /* 浅绿背景，与整体风格呼应 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 底部阴影 */
+}
+
+
 /*slider样式*/
 
 #slider {
@@ -204,7 +216,9 @@ main {
 	color: #fff;
 }
 
+
 /* 页面底部样式 */
+
 .user-icon img {
 	max-width: 50px;
 	height: auto;
@@ -260,8 +274,12 @@ main {
 	text-decoration: underline;
 }
 
+
 /* 内部内容信息 */
+
+
 /* 滚动模块样式 */
+
 .scroll-module {
 	background-color: white;
 	padding: 20px;
@@ -285,7 +303,9 @@ main {
 	background-color: #f9f9f9;
 }
 
+
 /* 招聘内容样式 */
+
 .jobs-section,
 .vendors-section {
 	background-color: white;
@@ -323,6 +343,7 @@ main {
 
 
 /*侧方展示栏1*/
+
 .containers {
 	display: flex;
 	flex-direction: row;
@@ -351,7 +372,9 @@ main {
 	transition: background-color 0.3s ease;
 }
 
+
 /* 如果需要鼠标悬停效果，可以添加以下样式 */
+
 .sidebar1-toggle:hover {
 	background-color: #DDE9F7;
 }
@@ -379,16 +402,20 @@ main {
 
 
 /* 为 .sidebar1 内的段落或文字块增加底部间距 */
+
 .sidebar1 p,
 .sidebar1 .text-block {
 	margin-bottom: 15px;
 }
 
+
 /* 可选：为最后一个段落或文字块移除底部间距 */
+
 .sidebar1 p:last-child,
 .sidebar1 .text-block:last-child {
 	margin-bottom: 0;
 }
+
 
 /* 可选：使用伪元素为文字块之间添加分隔线 */
 
@@ -402,8 +429,10 @@ main {
 	margin-bottom: 15px;
 }
 
+
 /* 注意：.text-block 是一个假设的类名，用于标识需要分隔的文字块。
    您需要根据实际的 HTML 结构来替换或添加相应的选择器。 */
+
 .sidebar1.open {
 	transform: translateX(0);
 }
@@ -414,7 +443,9 @@ main {
 	background-color: #F2F7FC;
 }
 
+
 /*页面主要内容*/
+
 .image-grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -562,13 +593,12 @@ main {
 	.company-item p:last-child {
 		display: none;
 	}
-	    /* 修改薪资样式 */
-  .salary {
-        position: relative;
-        top: 0;
-        right: 0;
-        display: block;
-        margin-top: 5px;
-    }
-
+	/* 修改薪资样式 */
+	.salary {
+		position: relative;
+		top: 0;
+		right: 0;
+		display: block;
+		margin-top: 5px;
+	}
 }
