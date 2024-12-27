@@ -35,6 +35,7 @@ body {
 	width: 100%;
 	z-index: 1000;
 	/* 确保悬浮在其他内容之上 */
+	height: auto;
 	/* 确保有足够高度 */
 	overflow: visible;
 	/* 确保内容不会被裁剪 */
