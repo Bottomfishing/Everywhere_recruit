@@ -189,7 +189,7 @@ html {
 
 /* 调整勾选框和条款文本的样式 */
 .field-wrap input[type="checkbox"] {
-    margin - right: 5px;
+    margin-right: 5px;
 }
 
 .field-wrap label a {
