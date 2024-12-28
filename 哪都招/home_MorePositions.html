@@ -1,9 +1,59 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-	</head>
-	<body>
-	</body>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home_MorePosition.css">
+    <title>热招职位</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h2>热招职位</h2>
+            <ul id="jobList">
+                <li data-job-id="1">
+                    <div class="job-item">
+                        <img src="company1_logo.png" alt="Company 1 Logo" class="company-logo">
+                        <div class="job-info">
+                            <span class="job-title">前端开发工程师</span>
+                            <span class="company-name">示例公司1</span>
+                            <span class="salary">10K - 20K</span>
+                            <p class="requirements">熟悉前端框架，如 Vue 或 React；具备良好的代码规范。</p>
+                        </div>
+                    </div>
+                </li>
+                <li data-job-id="2">
+                    <div class="job-item">
+                        <img src="company2_logo.png" alt="Company 2 Logo" class="company-logo">
+                        <div class="job-info">
+                            <span class="job-title">后端开发工程师</span>
+                            <span class="company-name">示例公司2</span>
+                            <span class="salary">12K - 25K</span>
+                            <p class="requirements">熟悉数据库操作，掌握至少一种后端框架。</p>
+                        </div>
+                    </div>
+                </li>
+                <li data-job-id="3">
+                    <div class="job-item">
+                        <img src="company3_logo.png" alt="Company 3 Logo" class="company-logo">
+                        <div class="job-info">
+                            <span class="job-title">数据分析师</span>
+                            <span class="company-name">示例公司3</span>
+                            <span class="salary">8K - 15K</span>
+                            <p class="requirements">熟练使用数据分析工具，如 SQL、Python 数据分析库。</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="right-panel" id="jobDetails">
+            <h2>职位详情</h2>
+            <div id="jobInfo"></div>
+        </div>
+    </div>
+    <script src="js/home_MorePositions.js"></script>
+</body>
+
 </html>

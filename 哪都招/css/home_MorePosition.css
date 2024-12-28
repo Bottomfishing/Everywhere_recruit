@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-panel {
+    width: 33.33%;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.right-panel {
+    width: 66.67%;
+    padding: 20px;
+}
+
+#jobList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.job-item {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.job-info {
+    flex: 1;
+}
+
+.job-title {
+    display: block;
+    font-weight: bold;
+}
+
+.company-name {
+    display: block;
+    color: #666;
+}
+
+.requirements {
+    margin-top: 5px;
+    color: #333;
+}
+
+#jobInfo {
+    margin-top: 20px;
+}
+
+.right-panel-salary {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.selected {
+    background-color: lightcyan;
+}
+
+@media (max-width: 768px) {
+   .right-panel-salary {
+       grid-column: 1/3;
+       justify-self: center;
+       font-size: 14px;
+    }
+}

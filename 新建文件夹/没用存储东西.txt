@@ -1,0 +1,28 @@
+		<div class="sidebar1-toggle" id="sidebar1Toggle">打开相关行业</div>
+				<div class="sidebar1" id="sidebar1">
+					<h3 data-category="internet-ai">互联网/AI</h3>
+					<h3 data-category="product">产品</h3>
+					<h3 data-category="Education-training">教育培训</h3>
+					<h3 data-category="design">设计</h3>
+					<h3 data-category="Electronics-Electrical-Communications">电子/电气/通信</h3>
+					<h3 data-category="CustomerService-Operations">客服/运营</h3>
+					<h3 data-category="sell">销售</h3>
+					<h3 data-category="Human-Administrative-Legal">人力/行政/法务</h3>
+					<h3 data-category="Finance-Audit-Tax">财务/审计/税务</h3>
+					<h3 data-category="manufacturing">生产制造</h3>
+					<h3 data-category="Retail-lifestyleServices">零售/生活服务</h3>
+					<h3 data-category="catering">餐饮</h3>
+					<h3 data-category="Hotel-Tourism">酒店/旅游</h3>
+					<h3 data-category="RealEstate-Construction">房地产/建筑</h3>
+					<h3 data-category="Live-Film-Media">直播/影视/传媒</h3>
+					<h3 data-category="Marketing-PR-Advertising">市场/公关/广告</h3>
+					<h3 data-category="Logistics-warehousing-driver">物流/仓储/司机</h3>
+					<h3 data-category="Purchasing-Trading">采购/贸易</h3>
+					<h3 data-category="CARS">汽车</h3>
+					<h3 data-category="Medical-health">医疗健康</h3>
+					<h3 data-category="finance">金融</h3>
+					<h3 data-category="Consulting-translation-law">咨询/翻译/法律</h3>
+					<h3 data-category="Energy-Environment-Agriculture">能源/环保/农业</h3>
+					<h3 data-category="SeniorManagement">高级管理</h3>
+					<h3 data-category="other">其他</h3>
+				</div>
