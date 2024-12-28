@@ -144,9 +144,9 @@ main {
 	background-position: right;
 	transition: background - position 0.3s ease;
 	box-sizing: border-box;
-    /* 确保边框和内边距包含在宽度内 */
-    margin: 0;
-    padding: 0;
+	/* 确保边框和内边距包含在宽度内 */
+	margin: 0;
+	padding: 0;
 }
 
 
@@ -161,7 +161,7 @@ main {
 	color: #333;
 	font-family: "Roboto", sans-serif;
 	background-color: transparent;
- box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .search-input:focus+.search-button {
@@ -184,7 +184,6 @@ main {
 	transition: transform 0.3s ease;
 	position: relative;
 }
-
 
 
 /* 搜索按钮悬停效果 */
@@ -653,6 +652,10 @@ main {
 	border-radius: 5px;
 	margin: 20px auto;
 	cursor: pointer;
+}
+
+a.view-more-wrapper {
+    text-decoration: none;
 }
 
 .view-more:hover {
