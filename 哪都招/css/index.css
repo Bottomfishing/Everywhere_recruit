@@ -37,15 +37,15 @@ html {
 }
 
 @keyframes logoFadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
+	from {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 /* 表单容器样式，把控表单整体在页面中的呈现 */
@@ -82,8 +82,8 @@ html {
 	color: #666;
 	background: #f0f0f0;
 	text-align: center;
-    border-bottom: 3px solid transparent;
-    transition: all 0.3s ease;
+	border-bottom: 3px solid transparent;
+	transition: all 0.3s ease;
 }
 
 .tab-group li a:hover {
@@ -121,13 +121,13 @@ html {
 .field-wrap input[type="text"],
 .field-wrap input[type="email"],
 .field-wrap input[type="password"] {
-    width: 100%;
-    padding: 12px 15px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    box-sizing: border-box;
-    font-size: 14px;
-    transition: all 0.3s ease;
+	width: 100%;
+	padding: 12px 15px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	box-sizing: border-box;
+	font-size: 14px;
+	transition: all 0.3s ease;
 }
 
 .field-wrap input[type="text"]:focus,
@@ -189,21 +189,21 @@ html {
 
 /* 调整勾选框和条款文本的样式 */
 .field-wrap input[type="checkbox"] {
-    margin-right: 5px;
+	margin-right: 5px;
 }
 
 .field-wrap label a {
-    color: #007bff;
-    text-decoration: none;
-    transition: all 0.3s ease;
+	color: #007bff;
+	text-decoration: none;
+	transition: all 0.3s ease;
 }
 
 .field-wrap label a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 /* 使勾选框和条款文本在同一行显示 */
 .field-wrap:has(input[type="checkbox"]) {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }

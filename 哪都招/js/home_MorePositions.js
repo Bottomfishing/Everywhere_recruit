@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 	const jobList = document.getElementById('jobList');
 	const jobDetails = document.getElementById('jobInfo');
 
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	// 获取第一个职位的数据
 	const firstJob = jobData[1];
-	if(firstJob) {
+	if (firstJob) {
 		jobDetails.innerHTML = `
             <h3>${firstJob.title}</h3>
             <img src="${firstJob.logo}" alt="${firstJob.company} Logo" class="company-logo">
@@ -43,13 +43,13 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
 		// 为第一个职位添加选中样式类
 		const firstJobItem = jobList.querySelector('li.job-item');
-		if(firstJobItem) {
+		if (firstJobItem) {
 			firstJobItem.classList.add('selected');
 		}
 	}
 
-	jobList.addEventListener('click', function(event) {
-		if(event.target.closest('.job-item')) {
+	jobList.addEventListener('click', function (event) {
+		if (event.target.closest('.job-item')) {
 			// 先移除所有职位的选中样式
 			const allJobItems = jobList.querySelectorAll('li.job-item');
 			allJobItems.forEach(item => item.classList.remove('selected'));
@@ -64,10 +64,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h4>职位要求:</h4>
                 <p>${job.requirements}</p>
             `;
-            
+
 			// 为点击的职位添加选中样式类
 			const clickedJobItem = event.target.closest('li.job-item');
-			if(clickedJobItem) {
+			if (clickedJobItem) {
 				clickedJobItem.classList.add('selected');
 			}
 		}

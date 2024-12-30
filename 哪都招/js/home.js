@@ -1,5 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
-	
+document.addEventListener('DOMContentLoaded', function () {
+
 	const sliderWrapper = document.querySelector('.slider-wrapper');
 	const dots = document.querySelectorAll('.dot');
 	let currentIndex = 0;
@@ -39,13 +39,13 @@ window.addEventListener('scroll', () => {
 	const sliderTop = slider.offsetTop;
 	const sliderHeight = slider.offsetHeight;
 
-	if(scrollTop >= sliderTop + sliderHeight && !isAnimating) {
+	if (scrollTop >= sliderTop + sliderHeight && !isAnimating) {
 		isAnimating = true;
 		navbar.classList.add('hidden');
 		setTimeout(() => {
 			isAnimating = false;
 		}, 300);
-	} else if(scrollTop < sliderTop + sliderHeight && navbar.classList.contains('hidden')) {
+	} else if (scrollTop < sliderTop + sliderHeight && navbar.classList.contains('hidden')) {
 		isAnimating = true;
 		navbar.classList.remove('hidden');
 		setTimeout(() => {

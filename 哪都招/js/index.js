@@ -1,6 +1,6 @@
 // 当DOM（文档对象模型）内容加载完成后，执行传入的回调函数
 // 这个事件确保在HTML文档结构和元素都加载完毕后再执行JavaScript代码，避免操作未加载完成的元素出现错误
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 	// JavaScript代码放在这里
 
 	// 获取的是id为'signup'的元素，注册表单相关的内容区域
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	loginContent.style.display = 'none';
 
 	// 为注册选项卡（tabSignup）添加点击事件监听器，当点击注册选项卡时执行传入的回调函数
-	tabSignup.addEventListener('click', function(e) {
+	tabSignup.addEventListener('click', function (e) {
 		// 阻止默认的点击行为，例如阻止链接的默认跳转行为（如果元素是a标签等有默认行为的元素）
 		e.preventDefault();
 		// 显示注册内容区域，将其display样式属性设置为'block'，使其在页面上显示出来
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	});
 
 	// 为登录选项卡（tabLogin）添加点击事件监听器，当点击登录选项卡时执行传入的回调函数
-	tabLogin.addEventListener('click', function(e) {
+	tabLogin.addEventListener('click', function (e) {
 		// 阻止默认的点击行为，例如阻止链接的默认跳转行为（如果元素是a标签等有默认行为的元素）
 		e.preventDefault();
 		// 隐藏注册内容区域，将其display样式属性设置为'none'，使其在页面上隐藏起来
@@ -50,9 +50,9 @@ document.addEventListener('DOMContentLoaded', function() {
 const signupForm = document.getElementById('signupForm');
 
 // 为表单的提交事件添加监听器
-signupForm.addEventListener('submit', function(event) {
+signupForm.addEventListener('submit', function (event) {
 	const termsCheckbox = document.getElementById('termsCheckbox');
-	if(!termsCheckbox.checked) {
+	if (!termsCheckbox.checked) {
 		alert('请勾选同意格式条款');
 		event.preventDefault(); // 阻止表单提交
 	}

@@ -1,5 +1,12 @@
 /* 基本样式重置 */
-body,h1,h2,h3,p,ul,li,a {
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a {
 	font-family: Arial, sans-serif;
 	line-height: 1.6;
 	margin: 0;
@@ -99,13 +106,13 @@ body {
 	border-radius: 5px;
 }
 
-.content,.team
-{
+.content,
+.team {
 	margin-bottom: 40px;
 }
 
-.content h2,.team h2
-{
+.content h2,
+.team h2 {
 	font-size: 28px;
 	margin-bottom: 20px;
 }

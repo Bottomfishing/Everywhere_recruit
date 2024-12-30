@@ -5,21 +5,24 @@ body {
     padding: 0;
     background-image: url("../img/tulip.gif");
     opacity: 0.85;
-    overflow-x: hidden; /* 防止水平滚动条 */
+    overflow-x: hidden;
+    /* 防止水平滚动条 */
 
 }
 
 header {
     background: #DDE9F7;
     color: #fff;
-    padding: 1rem 0; 
-    align-items: center; /* 垂直居中 */
+    padding: 1rem 0;
+    align-items: center;
+    /* 垂直居中 */
     /* 注意：这里我们不使用justify-content: center; 因为这样会将按钮和标题都居中 */
 }
 
 header h1 {
     margin: 0;
 }
+
 .hero h1 {
     text-align: center;
 }
@@ -56,23 +59,31 @@ footer {
 
 /* styles.css（在现有样式的基础上添加） */
 #back-button {
-	float: left; /* 浮动到左边 */
-	
-    background-color: #DDE9F7; /* 与header背景色相同 */
+    float: left;
+    /* 浮动到左边 */
+
+    background-color: #DDE9F7;
+    /* 与header背景色相同 */
     color: white;
     border: none;
     padding: 0.5rem 1rem;
-    margin-right: 1rem; /* 与h1标签保持一定距离 */
+    margin-right: 1rem;
+    /* 与h1标签保持一定距离 */
     cursor: pointer;
-    font-size: 1rem; /* 根据需要调整字体大小 */
-    position: relative; /* 如果需要相对于header定位 */
-    top: 0.25rem; /* 微调按钮位置，使其与h1标签垂直对齐（可选） */
-   
-    margin-right: 3rem; /* 可选：在按钮和标题之间添加一些空间 */
+    font-size: 1rem;
+    /* 根据需要调整字体大小 */
+    position: relative;
+    /* 如果需要相对于header定位 */
+    top: 0.25rem;
+    /* 微调按钮位置，使其与h1标签垂直对齐（可选） */
+
+    margin-right: 3rem;
+    /* 可选：在按钮和标题之间添加一些空间 */
 }
 
 #back-button:hover {
-    background-color:#C3CAE6; /* 鼠标悬停时改变背景色 */
+    background-color: #C3CAE6;
+    /* 鼠标悬停时改变背景色 */
 }
 
 .title-container {
@@ -80,11 +91,14 @@ footer {
     /* 由于我们使用了flex布局，并且header的justify-content不是center，我们需要一个技巧来居中标题 */
     /* 方法是使用一个空的flex项（通过设置margin-left和margin-right为auto来实现） */
     display: flex;
-    flex: 1; /* 使这个容器占据剩余的空间 */
-    justify-content: center; /* 在这个容器内居中标题 */
+    flex: 1;
+    /* 使这个容器占据剩余的空间 */
+    justify-content: center;
+    /* 在这个容器内居中标题 */
 }
 
 .title-container h1 {
     /* 标题本身的样式，如果需要的话 */
-    margin: 0; /* 移除默认的标题外边距 */
+    margin: 0;
+    /* 移除默认的标题外边距 */
 }
